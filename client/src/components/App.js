@@ -1,30 +1,29 @@
+// import '../App.css'
 import { useState, useEffect } from "react";
-import { Link, Outlet } from 'react-router-dom'
-
+import { BrowserRouter as Router, Link, Outlet, Routes, Route } from 'react-router-dom'
+import LoginForm from './LoginForm'
+import SignupForm from './SignupForm'
+import LandingPage from './LandingPage'
+import Dashboard from './Dashboard'
+import Navigation from './Navigation'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [user, setUser] = useState(null)
 
   useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
+    fetch("/me").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => setUser(user))
+      }
+    })
+  }, [])
+
+  if (!user) return <LandingPage setUser={setUser} />
 
   return (
-    <div>
-      <h1>Bookkeeper</h1>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link>
-      </nav>
-      <Outlet />
-    </div>
+    <Routes>
+      <Route path='/' element={<Dashboard user={user} setUser={setUser} />}/>
+    </Routes>
   );
 }
 
