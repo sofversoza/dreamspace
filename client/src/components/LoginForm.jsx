@@ -1,25 +1,21 @@
 import React, { useState } from 'react'
 import { Avatar, Button, TextField, Checkbox, FormControlLabel, Grid } from '@mui/material';
-import { Box, Typography, Container } from '@mui/material';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Box, Typography, Container, Paper, Alert } from '@mui/material';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import { Link } from 'react-router-dom'
-import SignupForm from './SignupForm'
+import LoginIcon from '@mui/icons-material/Login';
+import { makeStyles } from '@mui/styles'
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#7e57c2',
-      contrastText: '#fff'
-    },
-    secondary: {
-      main: '#311b92',
-      contrastText: '#fff',
-    }
-  }    
-});
+const useStyles = makeStyles({
+  paper: {
+    bgColor: '#f9f9f9',
+    width: '90%',
+    padding: 20,
+  },
+})
 
 function LoginForm({ setShowLogin, setUser }) {
+  const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -45,82 +41,81 @@ function LoginForm({ setShowLogin, setUser }) {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <Box sx={{ marginTop: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign In
-          </Typography>
+    <Container component="main" maxWidth="xs">
+      <Box sx={{ marginTop: 15, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Avatar sx={{ p:2, bgcolor: 'info.main', mb:1.5 }}>
+          <VpnKeyIcon sx={{ width: 54, height: 55 }} color="primary"/>
+        </Avatar>
+        <Typography component="h1" variant="h1" color="info.main">
+          Sign In
+        </Typography>
 
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            <TextField onChange={ (e) => setEmail(e.target.value) }
-              margin="normal"
-              required
-              fullWidth
-              type="text"
-              value={ email }
-              id="email"
-              label="Email Address"
-              autoComplete="email"
-              autoFocus
-              color='primary' 
-            />
-            <TextField onChange={(e) => setPassword(e.target.value)}
-              margin="normal"
-              required
-              fullWidth
-              type="password"
-              value={ password }
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              color='primary'
-            />
-            <FormControlLabel
-              control={ <Checkbox value="remember" color="primary" /> }
-              label="Remember me"
-            />
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1, marginTop: 4 }}>
+          <Paper elevation={0} variant="outlined" className={classes.paper}>
+          <TextField onChange={ (e) => setEmail(e.target.value) }
+            margin="normal"
+            required
+            fullWidth
+            value={email}
+            id="email"
+            label="Email Address"
+            autoComplete="email"
+            autoFocus
+            color='secondary' 
+          />
+          <TextField onChange={(e) => setPassword(e.target.value)}
+            margin="normal"
+            required
+            fullWidth
+            value={password}
+            label="Password"
+            id="password"
+            type="password"
+            autoComplete="current-password"
+            color='secondary'
+          />
+          <FormControlLabel
+            control={ <Checkbox value="remember" color="primary" size="small" /> }
+            label="Remember me"
+          />
 
+          <Box sx={{ mt:3.5, mb:3.5 }}>
             {errors ? 
               errors.map(error => {
-                return (<p className='errors' key={error}>{error}</p>)
+                return (
+                  <Alert key={error} severity="error" sx={{ mb:2 }} >
+                    {error}
+                  </Alert> )
               }) : null
             }
-
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color='secondary'
-              sx={{ mt: 3, mb: 2 }} >
-              Sign In
-            </Button>
-
-            <Grid container>
-              <Grid item xs>
-               <Link to="#">
-                <Typography variant="body2" color='primary'>
-                  Forgot Password?
-                </Typography>
-               </Link>
-              </Grid>
-              <Grid item>
-                <Typography variant="body2" color='primary'>
-                  Don't have an account? Sign Up
-                </Typography>
-                <Button color='secondary' onClick={() => setShowLogin(true)}>
-                 Sign up
-                </Button>
-              </Grid>
-            </Grid>
           </Box>
+
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color='primary'
+            endIcon={ <LoginIcon /> }
+            sx={{ mt: 3, mb: 2 }} >
+            Sign In
+          </Button>
+
+          <Grid container sx={{ mt:1}}>
+            <Grid item xs>
+              <Button size="small">
+                Forgot Password?
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button color='primary' size="small" onClick={() => setShowLogin(true)}>
+                Create an account
+              </Button>
+            </Grid>
+          </Grid>
+        </Paper>
         </Box>
-      </Container>
-    </ThemeProvider>
+      </Box>
+    </Container>
   );
 }
 
