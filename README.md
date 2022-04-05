@@ -4,14 +4,17 @@
 *Dreamspace* is a social media platform without the social aspect, just media. 
 This is a passion project of mine (as well as my final project for a coding bootcamp) that I plan on continually working on as I keep advancing my skills and knowledge overtime, and hopefully one day be able to deploy it as a fullstack web and mobile application ready for everyone to use and enjoy. *As of now, this is just the first draft.*
 
+*Landing Page*
 <img width="1728" alt="Screen Shot 2022-04-04 at 8 24 34 PM" src="https://user-images.githubusercontent.com/92960864/161673083-7670dcb6-e5f7-446a-ad46-80fe1491f3a3.png">
 
 
 ## The Vision 👁️
 My vision for *Dreamspace* is to create a media sharing platform for everyone, but more importantly, for aspiring artists who struggle with mental health. I personally enjoy being on social media to get inspiration from different types of people who share their art. Unfortunately, these past few years I've been feeling anxious whenever I get on my socials for a lot of reasons, but mostly, it's very triggering to see everything bad that's happening in the world all at once. I don't believe that it's healthy for our mind to absorb everything from everyone whenever we log on instagram, twitter, or facebook. Although it's important to shed light on world crisis, political issues, harrasment, etc.. it's not healthy to take it all in daily and get desensitized by all the horrors of our society, no escape from it unless you log off. I wanted a 'safe' place away from all the unpleasantness and continue to get inspired and immerse myself in art, which is what drives me as a person. That's how I came up with *Dreamspace*, hence the name stating literally *my dream space.*
 
+*Log in Page*
 <img width="1728" alt="Screen Shot 2022-04-04 at 8 25 21 PM" src="https://user-images.githubusercontent.com/92960864/161674331-bbf90841-479b-43be-b4ad-353b529bb513.png">
 
+*Sign up Page*
 <img width="1728" alt="Screen Shot 2022-04-04 at 8 25 54 PM" src="https://user-images.githubusercontent.com/92960864/161674358-8f2e081a-d404-40a7-bf09-d73c9e113fb0.png">
 
 ## As a User, I can... 👤
@@ -25,13 +28,13 @@ My vision for *Dreamspace* is to create a media sharing platform for everyone, b
 * Follow a user *(if I have their invite link)*
 * Share my invite link to be followed by a user *(or personal friend!)*
 
-*User's Profile*
-<img width="1728" alt="Screen Shot 2022-04-04 at 8 27 08 PM" src="https://user-images.githubusercontent.com/92960864/161674408-5b6a441c-9a89-4d3f-964d-ee29ce335f68.png">
+*User's Profile Page*
+<img width="1406" alt="Screen Shot 2022-04-04 at 9 30 09 PM" src="https://user-images.githubusercontent.com/92960864/161679197-36eac85a-b40c-4098-a968-cde7932bb595.png">
 
-*User's Dashboard. This dummy user is a writer, so she's got a lot of blog posts*
+*User's Dashboard. This dummy user is a writer, so she's got a lot of blog posts.*
 <img width="1321" alt="Screen Shot 2022-04-04 at 8 45 00 PM" src="https://user-images.githubusercontent.com/92960864/161674882-38b9668a-2aaa-46c4-b44c-ef99792d3b3b.png">
 
-*User's Dashboard. Mixed Media (blogs & photos)*
+*User's Dashboard. Mixed Media ( blogs & photos )*
 <img width="1300" alt="Screen Shot 2022-04-04 at 9 20 42 PM" src="https://user-images.githubusercontent.com/92960864/161678205-8fbf1069-189a-4f70-9f6a-253018698efa.png">
 
 ## Features & Future Features 💡
