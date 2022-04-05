@@ -4,7 +4,6 @@
 *Dreamspace* is a social media platform without the social aspect, just media. 
 This is a passion project of mine (as well as my final project for a coding bootcamp) that I plan on continually working on as I keep advancing my skills and knowledge overtime, and hopefully one day be able to deploy it as a fullstack web and mobile application ready for everyone to use and enjoy. *As of now, this is just the first draft.*
 
-*Landing Page*
 <img width="1728" alt="Screen Shot 2022-04-04 at 8 24 34 PM" src="https://user-images.githubusercontent.com/92960864/161673083-7670dcb6-e5f7-446a-ad46-80fe1491f3a3.png">
 
 
