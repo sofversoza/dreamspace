@@ -27,7 +27,7 @@ My vision for ***Dreamspace*** is to create a media sharing platform for everyon
 * Share other user's post outside of Dreamspace 
 * Block a user from seeing my posts and profile
 * Follow a user *(if I have their invite link)*
-* Share my invite link to be followed by a user *(or personal friend!)*
+* Share my invite link to be followed by a user *(or in real life friend!)*
 
 *User's Profile Page*
 <img width="1406" alt="Screen Shot 2022-04-04 at 9 30 09 PM" src="https://user-images.githubusercontent.com/92960864/161679197-36eac85a-b40c-4098-a968-cde7932bb595.png">
