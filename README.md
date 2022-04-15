@@ -51,6 +51,13 @@ My vision for ***Dreamspace*** is to create a media sharing platform for everyon
 * **Monthly Appreciation** - Dreamspace is for everyone, but most importantly, it is for aspiring artists *(writer, designer, singer, etc.)* to truly feel free and work as experimental as they want to be and I would love to highlight their work to show appreciation and help an artist find their voice in the art world. I personally know how a little showcase of your work can reach thousands of other people that could potentially be your future employer, mentor, or who knows what else, the possibilties are endless. I would love for Dreamspace to be able to do that for its community, because *the core vision for this platform is to inspire and celebrate aspiring artists.*
 * **AND MORE! (in the future 🥳)**
 
+## Figma (initial idea for layout design) 🎨
+*Profile Page*
+<img width="1219" alt="Screen Shot 2022-04-14 at 4 59 28 PM" src="https://user-images.githubusercontent.com/92960864/163495265-7620ef73-a552-40a1-b7eb-8472ad972da7.png">
+
+*Dashboard*
+<img width="1218" alt="Screen Shot 2022-04-14 at 5 00 07 PM" src="https://user-images.githubusercontent.com/92960864/163495276-0cf9f9e5-2d9b-46be-8381-9ed8df7bf8c6.png">
+
 ## Technologies Used 👩‍💻
 * Rails (backend)
 * React (frontend)
